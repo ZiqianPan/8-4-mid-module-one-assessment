@@ -106,10 +106,10 @@ function getMostCommonAnimal(animals) {
   if (animals.length === 0) {
     result = null;
   } else {
-    result = { count: animals[0].count };
+    result = animals[0];
   }
 
-  for (let i = 0; i < animals.length; i++) {
+  for (let i = 1; i < animals.length; i++) {
     if (animals[i].count > result.count) {
       result = animals[i];
     }
